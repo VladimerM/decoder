@@ -80,3 +80,7 @@ body{
   flex: 0 1 50%;
   background-color: antiquewhite;
 }
+
+#dummy-input{
+  visibility: hidden;
+}

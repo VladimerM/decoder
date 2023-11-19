@@ -1,4 +1,5 @@
 const input = document.getElementById("input");
+const dummyInput = document.getElementById("dummy-input");
 const output = document.getElementById("output");
 const clearButton = document.getElementById("clear");
 const charmaps = {
@@ -19,7 +20,8 @@ const convertEncoding = function (subject, fromChars, toChars) {
 };
 
 input.addEventListener("input", () => {
-  output.value = convertEncoding(input.value, charmaps.lat, charmaps.utf);
+  dummyInput.value = convertEncoding(input.value, charmaps.lat, charmaps.utf);
+  output.value = dummyInput.value;
 });
 
 clearButton.addEventListener("click", () => {
